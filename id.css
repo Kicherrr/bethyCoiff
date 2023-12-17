@@ -1,0 +1,458 @@
+/*style pour le corps de la page*/
+
+    #menu li {
+      float: left;
+    }
+    #menu a {
+      display: block;
+      color: #333;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    #li1 {
+      font-family: 'Alkatra-Bold';
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      margin-bottom: 10px;
+
+    }
+
+    #lit {
+      list-style-type: none;
+      padding: 10px;
+      background-color: #fff;
+      border: 1px solid #ccc;
+      margin-bottom: -1px;
+    }
+/*couleur de l'arc en ciel quand on passe sur une option*/
+#r:hover{
+  background-color: red;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+#o:hover{
+  background-color: orange;
+  text-decoration: underline;
+}
+#j:hover{
+  background-color: yellow;
+  text-decoration: underline; 
+}
+#vert:hover{
+  background-color: green;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+#b:hover{
+  background-color: blue;
+  text-decoration: underline;
+  color: whitesmoke;
+}
+#i:hover{
+  background-color: indigo;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+#v:hover{
+  background-color: purple;
+  color: whitesmoke;
+  text-decoration: underline;
+}
+/* Style pour un élément avec l'ID "ws" */
+#ws{
+  font-size: px;
+  color: whitesmoke;
+}       
+/* CSS pour un bouton */
+#button {
+  transform: rotate(-25deg) skew(25deg);
+  transform-style: preserve-3d;
+  position: relative;
+  list-style: none;
+  width: 100px;
+  height: 32px;
+  border: none;
+  background: transparent;
+  font-family: inherit;
+}
+/* Styles pour la pseudo-classe "before" du bouton */
+#button:before {
+  content: '';
+  position: absolute;
+  bottom: -7px;
+  left: -4px;
+  width: 100%;
+  height: 8px;
+  background: #2a2a2a;
+  transform: skewX(-41deg);
+}
+/* Styles pour la pseudo-classe "after" du bouton */
+#button:after {
+  content: '';
+  position: absolute;
+  top: 3px;
+  left: -6px;
+  width: 6px;
+  height: 100%;
+  background: #2a2a2a;
+  transform: skewY(-49deg);
+}
+/* Styles pour le texte du bouton */
+#button span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #2a2a2a;
+  color: #fff;
+  font-size: 20px;
+  transition: 1.1s ease-out;
+}
+/* Styles pour l'animation du texte lorsqu'on survole le bouton */
+#button:hover span {
+  z-index: 1000;
+  transition: .3s;
+  color: #fff;
+}
+/* Styles pour les différents éléments du texte lorsqu'on survole le bouton */
+#button:hover span:nth-child(5) {
+  transform: translate(32px, -32px);
+  opacity: 1;
+}
+
+#button:hover span:nth-child(4) {
+  transform: translate(24px, -24px);
+  opacity: .8;
+}
+
+#button:hover span:nth-child(3) {
+  transform: translate(16px, -16px);
+  opacity: .6;
+}
+
+#button:hover span:nth-child(2) {
+  transform: translate(8px, -8px);
+  opacity: .4;
+}
+
+#button:hover span:nth-child(1) {
+  transform: translate(0px, 0px);
+  opacity: .2;
+}
+/* Styles pour les différents éléments du texte lorsqu'on appuie sur le bouton */
+#button:active span:nth-child(5) {
+  transform: translate(16px, -16px);
+  opacity: 1;
+}
+
+#button:active span:nth-child(4) {
+  transform: translate(12px, -12px);
+}
+
+#button:active span:nth-child(3) {
+  transform: translate(8px, -8px);
+}
+
+#button:active span:nth-child(2) {
+  transform: translate(-4px, +4px);
+}
+
+#button:active span:nth-child(1) {
+  transform: translate(0px, 0px);
+}
+/* Styles pour le texte du bouton lorsqu'on survole le premier élément du menu */
+#button:nth-child(1):hover span {
+  background: #52E19F;
+}
+/* Styles pour le menu de navigation */
+#menu {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        background-color: #333;
+        color: #fff;
+        z-index: 999;
+        overflow: hidden;
+        transition: height 0.5s ease-in-out;
+      }
+      #menu:hover {
+        height: 95px;
+      }
+      #menu ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      #menu li {
+        display: inline-block;
+      
+      }
+      
+    #monthAndYear {
+      font-size: 50px;
+      margin-top: 20px;
+      color: whitesmoke;
+      text-decoration: underline;
+      height: 0px;
+    }
+
+    #prevMonth, #nextMonth {
+      color: whitesmoke;
+      font-size: 50px;
+      margin-right: 150px;
+      margin-left: 150px ;
+      cursor: pointer;
+      height: 50px;
+
+    }
+#button2 {
+  font-family: monospace;
+  font-size: 1.5rem;
+  color: #FAFAFA;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: 2px solid #FAFAFA;
+  background: #252525;
+  box-shadow: 3px 3px #fafafa;
+  cursor: pointer;
+  margin: 35px 0;
+}
+
+#button2:active {
+  box-shadow: none;
+  transform: translate(3px, 3px);
+}
+
+
+/* Styles pour le menu de navigation */
+#menu2 {
+  position: fixed;
+  top: 0;
+  right: 0; 
+  width: 0px; 
+  background-color: #333;
+  height: 100%;
+  color: #fff;
+  z-index: 999;
+  overflow: hidden;
+  transition: width 1s ease-in-out;
+}
+#menu2.is-close {
+  width: 0%; 
+}
+
+#menu2.is-open {
+  width: 30%; 
+}
+
+#menu2 a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+
+#rick-roll{
+  background-color: #333 ;
+  color: #333;
+  width: 100%;
+}
+
+#li2{
+  list-style-type: none;
+  font-size: 50px;
+
+}
+#droit{
+  padding-left: 10px; 
+  margin-top: -30px;
+}
+#leftt{
+  text-align: left;
+}
+#right{
+  text-align: right;
+}
+
+#button3 {
+  position: relative;
+  top: 200px; 
+  margin: 0;
+  padding: 0.8em 1em;
+  outline: none;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  text-transform: uppercase;
+  background-color: black;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 300;
+  font-size: 25px;
+  font-family: inherit;
+  z-index: 0;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#button3:hover {
+  animation: sh0 0.5s ease-in-out both;
+}
+
+@keyframes sh0 {
+  0% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: rotate(7deg) translate3d(0, 0, 0);
+  }
+
+  50% {
+    transform: rotate(-7deg) translate3d(0, 0, 0);
+  }
+
+  75% {
+    transform: rotate(1deg) translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: rotate(0deg) translate3d(0, 0, 0);
+  }
+}
+
+#button3:hover span {
+  animation: storm 0.7s ease-in-out both;
+  animation-delay: 0.06s;
+}
+
+#button3::before,
+#button3::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #fff;
+  opacity: 0;
+  transition: transform 0.15s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.15s cubic-bezier(0.02, 0.01, 0.47, 1);
+  z-index: -1;
+  transform: translate(100%, -25%) translate3d(0, 0, 0);
+}
+
+#button3:hover::before,
+#button3:hover::after {
+  opacity: 0.15;
+  transition: transform 0.2s cubic-bezier(0.02, 0.01, 0.47, 1), opacity 0.2s cubic-bezier(0.02, 0.01, 0.47, 1);
+}
+
+#button3:hover::before {
+  transform: translate3d(50%, 0, 0) scale(0.9);
+}
+
+#button3:hover::after {
+  transform: translate(50%, 0) scale(1.1);
+}
+
+.image-grid div:hover img {
+  transform: scale(1.1); /* ajouter un effet de zoom sur les images */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5); /* ajouter une ombre pour faire ressortir les images */
+}
+
+.image-description {
+  opacity: 0; /* cacher la description par défaut */
+  transition: opacity 0.3s ease-in-out; /* ajouter un effet de transition fluide pour l'opacité */
+}
+.image-grid div:hover .image-description {
+  opacity: 1; /* rendre la description visible lors du survol */
+}
+#Txtdes{
+  color: whitesmoke;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+
+.rating:not(:checked) > input {
+  position: absolute;
+  appearance: none;
+}
+
+.rating:not(:checked) > label {
+  float: right;
+  cursor: pointer;
+  font-size: 50px;
+  color: #666;
+  margin-top: -20px;
+}
+
+.rating:not(:checked) > label:before {
+  content: '★';
+}
+
+.rating > input:checked + label:hover,
+.rating > input:checked + label:hover ~ label,
+.rating > input:checked ~ label:hover,
+.rating > input:checked ~ label:hover ~ label,
+.rating > label:hover ~ input:checked ~ label {
+  color: #e58e09;
+}
+
+.rating:not(:checked) > label:hover,
+.rating:not(:checked) > label:hover ~ label {
+  color: #ff9e0b;
+}
+
+.rating > input:checked ~ label {
+  color: #ffa723;
+}
+
+#b1{
+  background-color: transparent;
+  font-size: 50px;
+  border: none;
+  color: whitesmoke;
+
+}
+#b2{
+  color: yellow;
+    border: none;
+    position: absolute;
+    right: 0;
+    top: 45px;
+}
+#b3{
+  background-color: transparent;
+  border: none;
+  right: 0;
+  font-size: 1px;
+}
+#b4{
+  background-color: transparent;
+  border: none;
+  color: whitesmoke;
+}
+#b5{
+  font-size: 10px;
+  background-color: transparent;
+  color: transparent;
+  cursor: not-allowed;
+  border: none;
+}

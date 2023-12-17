@@ -1,0 +1,287 @@
+ .hero {
+      
+      text-align: center;
+      padding: 50px 0;
+      margin-bottom: 30px;
+    }
+    h1 {
+      font-family: 'Alkatra-Bold';
+      font-size: 20px;
+      color: #333;
+    }
+    h2 {
+      font-family: 'Alkatra-Bold';
+      font-size: 38px;
+      color: #333;
+    }
+    /*style pour le 'pied' de la page*/
+footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+    }
+footer a {
+  display: inline-block;
+  background-color: #0DB000 ;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+footer a:hover {
+      text-decoration: underline;
+      background-color: #c2185b;
+    }
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url('background1.jpg');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+/*
+La propriété "margin" et "padding" sont à 0 pour le corps entier du document.
+"background-image" utilise l'image "background1.jpg" comme fond d'écran, tandis que "background-position" centre l'image horizontalement et verticalement.
+"background-repeat" est défini sur "no-repeat" pour éviter que l'image ne soit répétée, et "background-attachment" est fixé pour que l'image ne défile pas avec la page.
+"background-size" est défini sur "cover" pour faire en sorte que l'image de fond couvre toute la surface de l'écran.
+*/
+
+h2 {
+  font-family: Trattatello, fantasy ;
+  text-decoration: underline;
+}
+/*La police du titre de niveau 2 est définie sur "Trattatello, fantasy".*/
+
+ul{
+  font-family: Brush Script MT, Brush Script Std, cursive ;
+}
+/*La police pour les listes à puces est définie sur "Brush Script MT, Brush Script Std, cursive"*/
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 24px;
+}
+/*Le fond de l'en-tête est défini sur une couleur sombre avec "background-color", tandis que "color" définit la couleur du texte sur blanc. "padding" est utilisé pour ajouter un espacement intérieur de 24 pixels.*/
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav li {
+  margin-right: 53px;
+}
+/*Les éléments de la liste de navigation sont définis comme une liste sans style avec "list-style-type". "margin" et "padding" sont également définis sur 0 pour cette liste. "display: flex" est utilisé pour aligner les éléments horizontalement.
+"margin-right" est utilisé pour ajouter un espacement de 180 pixels entre chaque élément de la liste de navigation*/
+
+
+
+.hero {
+  height: 500px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero h1 {
+  font-size: 4em;
+  color: #fff;
+  text-align: center;
+  text-shadow: 2px 2px #000;
+  text-decoration:underline ;
+}
+/*La section "hero" est définie pour avoir une hauteur de 500 pixels, et "display: flex" est utilisé pour aligner les éléments au centre horizontalement et verticalement.
+Le titre de niveau 1 dans la section "hero" utilise une police de 4em et une couleur de texte blanc avec "color". "text-align" est utilisé pour centrer le texte horizontalement, et "text-shadow" est utilisé pour ajouter une ombre au texte.*/
+
+
+/* Style pour le contenu principal */
+.content {
+  padding: 50px;
+  background-color: #fff;
+  color: #333;
+}
+
+/* Style pour les titres du contenu principal */
+.content h2 {
+  font-size: 2em;
+}
+
+/* Style pour les paragraphes du contenu principal */
+.content p {
+  font-size: 1.2em;
+  line-height: 1.5;
+}
+
+
+
+/* Style pour les listes du contenu principal */
+.content ul {
+  font-size: 1.2em;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+/*style pour le 'pied' de la page*/
+footer a {
+  display: inline-block;
+  background-color: #0DB000 ;
+  color: #fff;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+footer a:hover {
+  background-color: #c2185b;
+}
+
+/* Style pour le formulaire */
+form{
+  font-size: 50px;
+  color:whitesmoke ;
+}
+/* Style pour une grille d'images */
+.image-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 20px;
+}
+
+/* Style pour les images dans la grille */
+.image-grid img {
+      max-width: 100%;
+      height: 40%;
+}
+/* Style pour la description des images dans la grille */
+.image-grid .image-description {
+  font-size: 14px;
+  margin-top: 10px;
+}
+table {
+  
+        background-color: mediumpurple;}
+th{
+  
+  border-collapse: collapse ;
+  padding: 55px;
+  border-style: ridge;
+
+}
+td{
+  background-color: whitesmoke;
+  padding: 10px;
+  border: 1px d;
+  border-collapse: collapse;
+}
+td:hover{
+  background-color: lightblue;
+}
+.today{
+  background-color: hotpink;
+ }
+
+/* Hide the default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 25px;
+  user-select: none;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: relative;
+  top: 0;
+  left: 0;
+  height: 1.3em;
+  width: 1.3em;
+  background: black;
+  border-radius: 50px;
+  transition: all 0.7s;
+  --spread: 20px;
+}
+
+/* When the checkbox is checked, add a purple background */
+.container input:checked ~ .checkmark {
+  background: black;
+  box-shadow: -10px -10px var(--spread) 0px #E20EC7, 0 -10px var(--spread) 0px #E20EC7, 10px -10px var(--spread) 0px #E20EC7, 10px 0 var(--spread) 0px #E20EC7, 10px 10px var(--spread) 0px #E20EC7, 0 10px var(--spread) 0px #E20EC7, -10px 10px var(--spread) 0px #E20EC7;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+  animation: checkmark 0.3s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 0.45em;
+  top: 0.25em;
+  width: 0.25em;
+  height: 0.5em;
+  border: solid #E20EC7;
+  border-width: 0 0.15em 0.15em 0;
+  transform: rotate(45deg);
+}
+
+/* Add animation for checkmark */
+@keyframes checkmark {
+  from {
+    transform: rotate(-45deg) scale(0);
+  }
+
+  to {
+    transform: rotate(45deg) scale(1);
+  }
+}
+
+/* Style the label text */
+.container span {
+  margin-left: 2em;
+  color: black;
+  font-weight: bold;
+  display: flex ;
+  align-items: center;
+
+}
+::-webkit-scrollbar {
+  width: 13px;
+}
+
+
+::-webkit-scrollbar-track {
+  background: #333; 
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: seagreen; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: purple; 
+}
